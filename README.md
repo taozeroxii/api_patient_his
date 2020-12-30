@@ -7,12 +7,12 @@
    Mock Data user   
    const user = {
      id: 1,
-     sub: 'test123456',
+     sub: 'test1234',
      email: 'test@gmail.com' 
    }
 
    หลังส่งค่าไปจะได้ค่าตอบกลับเป็นข้อมูล user ทั้งหมดมารวมถึง token ที่ใช้งานแทน session  token Type Bearer 
-   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwic3ViIjoidGVzdDEyMzQiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNjA5MzIxNDI0fQ.9K61skvzaKdB8MpOFuI4CEnvy7Na__qNk2Y9-BOt-pw"
+   ตัวอย่าง "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwic3ViIjoidGVzdDEyMzQiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNjA5MzIxNDI0fQ.9K61skvzaKdB8MpOFuI4CEnvy7Na__qNk2Y9-BOt-pw"
    ** หมายเหตุ  token จะเปลี่ยนทุกครั้งที่มีการ login ใหม่** 
    ลองเทสเข้า url localhost:<port>/user/profile เพื่อดูว่า login แล้วหรือไม่ต้องส่งค่า Token ที่ได้จากการ lognin  หาก login แล้วจะรีเทรินค่า user name password id กลับมาเป็น json format
 
