@@ -8,7 +8,8 @@ const passport      = require('passport'),
 const user = {
   id: 1,
   sub: 'test1234',
-  email: 'test@gmail.com'
+  email: 'test@gmail.com',
+  password:'@Cpa10665|test1234tb.159'
 }
  
 passport.use(new LocalStrategy({
@@ -18,7 +19,7 @@ passport.use(new LocalStrategy({
   (email, password, cb) => {        
 
     //this one is typically a DB call.
-    if (email !== user.email || password !== user.sub) 
+    if (email !== user.email || password !== user.password) 
       return cb(null, false, {message: 'Incorrect email or password.'})
             
     return cb(null, user, {message: 'Logged In Successfully'})

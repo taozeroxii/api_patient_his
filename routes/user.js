@@ -7,7 +7,7 @@ router.get('/', (req, res, next) => {
 
 /* GET user profile. */
 router.get('/profile', (req, res, next)  => {
-  res.send(req.user);
+  res.send(req.user);//แสดงรายละเอียดทั้งหมดของ user หากต้องการแสดงแค่ข้อมูลชื่อใช้ .sub ต่อท้าย
 });
 
 
