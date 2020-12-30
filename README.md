@@ -1,4 +1,4 @@
-1.Install all package npm install ลง node package ทั้งหมด
+1.Install all package npm install ลง node package ทั้งหมด สร้างไฟล์ configs.js และconnect database ได้เลย ปัจจุบันใช้ของ postgresql
 2.test runproject npm start สั่งรันโปรเจค
 3.login authenticate by postman passport
 ล็อกอิน post ใน url  localhost:3000/auth/login  
