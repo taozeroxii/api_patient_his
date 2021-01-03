@@ -14,8 +14,10 @@
    }
 
  หลังส่งค่าไปจะได้ค่าตอบกลับเป็นข้อมูล user ทั้งหมดมารวมถึง token ที่ใช้งานแทน session  token Type Bearer 
- ตัวอย่าง "token":
- "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwic3ViIjoidGVzdDEyMzQiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNjA5MzIxNDI0fQ.9K61skvzaKdB8MpOFuI4CEnvy7Na__qNk2Y9-BOt-pw"
+ ตัวอย่าง 
+ ```
+ "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwic3ViIjoidGVzdDEyMzQiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNjA5MzIxNDI0fQ.9K61skvzaKdB8MpOFuI4CEnvy7Na__qNk2Y9-BOt-pw"
+ ```
  ลองเทสเข้า url localhost:<port>/user/profile เพื่อดูว่า login แล้วหรือไม่ต้องส่งค่า Token ที่ได้จากการ lognin  หาก login แล้วจะรีเทรินค่า user name password id กลับมาเป็น json format
 
  Then Your get token Type Bearer Copy token to Authorization and paste your can get data  สามารถดึงข้อมูลจากในฐานข้อมูล his รพ ได้โดยต้องส่ง token มาพร้อมกับเลข hn  
