@@ -1,8 +1,8 @@
 # ระบบ api his hosxp-4 postgre demo การติดตั้ง
 
-1.  Install all package npm install ลง node package ทั้งหมด สร้างไฟล์ configs.js และconnect database ได้เลย ปัจจุบันใช้ของ postgresql
-2.  test runproject npm start สั่งรันโปรเจค
-3.  login authenticate by postman passport
+0.  Install all package npm install ลง node package ทั้งหมด สร้างไฟล์ configs.js และconnect database ได้เลย ปัจจุบันใช้ของ postgresql
+1.  test runproject npm start สั่งรันโปรเจค
+2.  login authenticate by postman passport
 ล็อกอิน post ใน url  localhost:3000/auth/login  
 โดยส่ง email password ให้ตรงกับที่ตั้งไว
   ในตัวอย่างใช้ค่าใน mockdata
@@ -22,14 +22,15 @@
  from url จากพาร์ทนี้
    - http://yourip/patientinfomations/getdatabyhn METHODS POST hn and server responds information patient from his
 
- 3.1 กรณี windows ให้ติดตั้ง auto start ด้วยคำสั่ง
- 3.1.1 npm install pm2-windows-startup -g
- 3.1.2 pm2-startup install
- 3.2 กรณี Linux ให้ใช้คำสั้ง pm2 startup
- 3.3 start การใช้งาน API ด้วยคำสั่ง pm2 start app.js -i 2 --name "api_getdatafromhis"  ชื่อ --name จะต้องตรงกับค่า PM2_NAME ใน config file
- 3.4 ใช้คำสั่ง pm2 save เพื่อบันทึกค่าที่ใช้งานในปัจจุบัน
- 3.5 เปิด http://localhost:<port ที่กำหนดตาม config> ใน browser เพื่อแสดงผล 
- 3.6 ทดสอบการเชื่อมต่อฐานข้อมูล HIS http://localhost:<port>
+# 3.Running ใช้งาน ผ่าน pm2 ใน server  
+ - 3.1 กรณี windows ให้ติดตั้ง auto start ด้วยคำสั่ง
+ - 3.1.1 npm install pm2-windows-startup -g
+ - 3.1.2 pm2-startup install
+ - 3.2 กรณี Linux ให้ใช้คำสั้ง pm2 startup
+ - 3.3 start การใช้งาน API ด้วยคำสั่ง pm2 start app.js -i 2 --name "api_getdatafromhis"  ชื่อ --name จะต้องตรงกับค่า PM2_NAME ใน config file
+ - 3.4 ใช้คำสั่ง pm2 save เพื่อบันทึกค่าที่ใช้งานในปัจจุบัน
+ - 3.5 เปิด http://localhost:<port ที่กำหนดตาม config> ใน browser เพื่อแสดงผล 
+ - 3.6 ทดสอบการเชื่อมต่อฐานข้อมูล HIS http://localhost:<port>
 
 
 
