@@ -22,7 +22,7 @@
 
  Then Your get token Type Bearer Copy token to Authorization and paste your can get data  สามารถดึงข้อมูลจากในฐานข้อมูล his รพ ได้โดยต้องส่ง token มาพร้อมกับเลข hn  
  from url จากพาร์ทนี้
-   - http://yourip/patientinfomations/getdatabyhn METHODS POST hn and server responds information patient from his
+   - http://yourip/patientinfomations/getdatabyhn METHODS get hn and server responds information patient from his
 
 # 3.Running ใช้งาน ผ่าน pm2 ใน server  
  - 3.1 กรณี windows ให้ติดตั้ง auto start ด้วยคำสั่ง
